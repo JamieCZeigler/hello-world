@@ -1,0 +1,108 @@
+<!DOCTYPE HRML>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Photos</title>
+		<link rel="stylesheet" href="stylesheet.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Playfair+Display|Raleway|Roboto&display=swap" rel="stylesheet">
+        <style>
+            .container {
+                display:grid;
+                grid-template-columns: repeat(5,1fr);
+                grid-auto-rows:minmax(150px,auto);
+				grid-gap:1em;
+                max-width:1200px;
+                margin:0 auto;
+            }
+            .header {
+                grid-column: 1/6;
+            }
+            nav {
+                grid-column: 1/6;
+            }
+			.photo {
+				grid-column: 1/6;
+                grid-row: 3/4;
+				background-image: url("images/J.Zeigler.png");
+                text-align: center;
+			}
+            .one {
+                grid-column: 1/2;
+				background-color:#FFE6E6;
+                padding:1em;
+            }
+            .two {
+                grid-column: 2/3;
+				background-color:#FEE7C9;
+                padding:1em;
+            }
+            .three {
+                grid-column: 3/4;
+				background-color:#FFFCD9;
+                padding:1em;
+            }
+            .four {
+                grid-column: 4/5;
+				background-color:#DCFDD1;
+                padding:1em;
+            }
+			.five {
+				grid-column: 5/6;
+				background-color:#DBF0FF;
+                padding:1em;
+			}
+            h1 {
+                font-size: 50pt;
+            }
+        </style>
+    </head>
+    <body>
+     <div class="container">
+        <div class="header">
+    		<img src="images/header.png" alt="View of Harrisonburg">
+        </div>
+       <nav>
+			<ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="downtown.html">Downtown</a></li>
+                <li><a href="jmu.html">JMU</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="links.html">Links</a></li>
+             </ul>
+        </nav>
+        <div class="photo">
+			<h1><emp>Photography</emp></h1>
+        </div>
+         <div class="one">
+         	<a href="images/bridge.jpg">
+			 <img src="images/bridge.jpg" alt="Bridge to SSC">
+			</a>
+			 <p>Once the hospital in Harrisonburg, JMU Students get to walk the halls of the iconic Students Success Center.</p>
+        </div>
+        <div class="two">
+			<a href="images/painting.jpg">
+        	 <img src="images/painting.jpg" alt="Painting">
+			</a>
+			<p>In the graduate building there is a lovely mural that lines the halls.</p>
+        </div>
+        <div class="three">
+			<a href="images/newcreations.jpg">
+      		 <img src="images/newcreations.jpg" alt="Stoping Human Traficing">
+			</a>
+			<p>One of the local nonprofits, New Creations, aims to stop Human Traficing. All of their proceeds go towards their mission.</p>
+        </div>
+		 <div class="four">
+			 <a href="images/ssc.jpg">
+			 	<img src="images/ssc.jpg" alt="Student Success Center">
+			 </a>
+			 <p>The Student Success Center is home to the Community Service Learning office as well as many other resources for students to be involved in the community.</p>
+		 </div>
+		 <div class="five">
+			 <a href="images/dogood.jpg">
+		 	 	<img src="images/dogood.jpg" alt="Shoping">
+			 </a>
+			 <p>There are many nonprofits downtown where you can support a good cause while shopping for yourself or loved ones.</p>
+		 </div>
+     </div>
+    </body>
+</html>
